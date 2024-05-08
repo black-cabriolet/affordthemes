@@ -1,0 +1,201 @@
+:root {
+  /* Widths for rows and containers */
+  --header-height: 160px;
+  --header-height-min: 80px;
+
+  /* Theme Colors */
+  --accent-color: cyan;
+  --dark-color: #222222;
+  --light-dark-color: #727272;
+  --light-color: #ffffff; /* Changed to white */
+  --grey-color: #dbdbdb;
+  --light-grey-color: #fafafa;
+  --primary-color: #6995B1;
+  --light-primary-color: #eef1f3;
+}
+
+/* On mobile devices below 600px */
+@media screen and (max-width: 600px) {
+  :root {
+    --header-height: 100px;
+    --header-height-min: 80px;
+  }
+}
+
+/* Fonts */
+:root {
+  --body-font: 'Chilanka', cursive;
+  --heading-font: 'Chilanka', cursive;
+  --secondary-font: 'Montserrat', sans-serif;
+}
+
+/* Body Styles */
+body {
+  font-family: var(--body-font);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  letter-spacing: 0.01625rem;
+}
+
+/* Search Bar */
+.search-bar {
+  border: 1px solid var(--light-color); /* Changed to use the light color */
+}
+
+.search-bar ::placeholder {
+  font-family: var(--secondary-font);
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* Category Icons */
+.iconify-icon.category-icon {
+  color: var(--accent-color); /* Changed to use the accent color */
+}
+
+a.categories-item:hover .iconify-icon.category-icon {
+  color: cyan; /* Changed to cyan on hover */
+}
+
+/* Banner Styles */
+.swiper-pagination-bullet {
+  border: 1px solid var(--bs-body-color);
+  background-color: transparent;
+  opacity: 1;
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 15px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 15px));
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--bs-body-color);
+  background: var(--bs-body-color);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+}
+
+/* Card Styles */
+.card {
+  --bs-card-inner-border-radius: none;
+  --bs-card-bg: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+/* Button Styles */
+.btn-primary {
+  padding: 1.2rem 3rem;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+}
+
+.btn-outline-primary {
+  transition: all 0.3s ease-in;
+  padding: 1.2rem 3rem;
+  letter-spacing: 0.02375rem;
+  color: cyan; /* Changed to cyan */
+  border: 1px solid cyan; /* Changed to cyan */
+}
+
+.btn-outline-dark {
+  transition: all 0.3s ease-in;
+  padding: 1.2rem 3rem;
+  letter-spacing: 0.02375rem;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+
+.btn-dark {
+  padding: 1.2rem 3rem;
+  font-size: 1.1875rem;
+  text-transform: uppercase;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+
+/* Responsive Button Styles */
+@media screen and (max-width: 991px) {
+  .btn-primary,
+  .btn-outline-primary,
+  .btn-outline-dark,
+  .btn-dark {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Miscellaneous Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--bs-body-color);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+.breadcrumb.text-white {
+  --bs-breadcrumb-divider-color: #fff;
+  --bs-breadcrumb-item-active-color: var(--bs-primary);
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--bs-primary);
+}
+
+.secondary-font {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+}
+
+/* ------ Pagination ------*/
+.pagination .page-numbers {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: var(--bs-body-color);
+  padding: 0 10px;
+  line-height: 1.4;
+  transition: 0.9s all;
+  border-radius: 8px;
+}
+
+.pagination .page-numbers:hover,
+.pagination .page-numbers.current {
+  color: var(--accent-color);
+}
+
+.iconify-icon.pagination-arrow {
+  color: var(--bs-body-color);
+  transition: 0.9s all;
+}
+
+.iconify-icon.pagination-arrow:hover {
+  color: var(--accent-color);
+}
+
+/* Single Product Section */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
