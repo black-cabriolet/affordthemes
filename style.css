@@ -24,9 +24,9 @@
 
 /* Fonts */
 :root {
-  --body-font: "Chilanka", cursive;
-  --heading-font: "Chilanka", cursive;
-  --secondary-font: "Montserrat", sans-serif;
+  --body-font: "Times New Roman", serif;
+  --heading-font: "Times New Roman", serif;
+  --secondary-font: "Times New Roman", serif;
 }
 
 /* Body Styles */
