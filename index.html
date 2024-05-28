@@ -34,7 +34,7 @@
     />
   </head>
 
-<body style="background-color: grey;">
+<body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <defs>
         <symbol
@@ -198,446 +198,227 @@
     </div>
 
     <!-- this is for the my cart button and menu at the top right corner -->
+<div
+  class="offcanvas offcanvas-end"
+  data-bs-scroll="true"
+  tabindex="-1"
+  id="offcanvasCart"
+  aria-labelledby="My Cart"
+>
+  <!-- Offcanvas Cart content -->
+</div>
 
-    <div
-      class="offcanvas offcanvas-end"
-      data-bs-scroll="true"
-      tabindex="-1"
-      id="offcanvasCart"
-      aria-labelledby="My Cart"
-    >
-      <div class="offcanvas-header justify-content-center">
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="order-md-last">
-          <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-primary">Your cart</span>
-            <span class="badge bg-primary rounded-circle pt-2">3</span>
-          </h4>
-          <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">shop</h6>
-                <small class="text-body-secondary">Brief description</small>
-              </div>
-              <span class="text-body-secondary">$12</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">shop</h6>
-                <small class="text-body-secondary">Brief description</small>
-              </div>
-              <span class="text-body-secondary">$8</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-              <div>
-                <h6 class="my-0">shop</h6>
-                <small class="text-body-secondary">Brief description</small>
-              </div>
-              <span class="text-body-secondary">$5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span class="fw-bold">Total (USD)</span>
-              <strong>$20</strong>
-            </li>
-          </ul>
-
-          <button class="w-100 btn btn-primary btn-lg" type="submit">
-            Continue to checkout
-          </button>
-        </div>
+<div
+  class="offcanvas offcanvas-end"
+  data-bs-scroll="true"
+  tabindex="-1"
+  id="offcanvasSearch"
+  aria-labelledby="Search"
+>
+  <div class="offcanvas-header justify-content-center">
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div
+    class="offcanvas-body"
+    style="background-color: cyan; box-shadow: 0 0 20px cyan;"
+  >
+    <div class="order-md-last">
+      <h4 class="text-primary text-uppercase mb-3">Search</h4>
+      <div
+        class="search-bar border rounded-2 border-dark-subtle"
+        style="background-color: blue; box-shadow: 0 0 20px blue;"
+      >
+        <form
+          id="search-form"
+          class="text-center d-flex align-items-center"
+          action=""
+          method=""
+        >
+          <input
+            type="text"
+            class="form-control border-0 bg-transparent"
+            placeholder="Search Here"
+            style="color: neonblue; /* Adjust neon blue color */"
+          />
+          <iconify-icon
+            icon="tabler:search"
+            class="fs-4 me-3"
+            style="color: neonblue; /* Adjust neon blue color */"
+          ></iconify-icon>
+        </form>
       </div>
     </div>
+  </div>
+</div>
 
-    <div
-      class="offcanvas offcanvas-end"
-      data-bs-scroll="true"
-      tabindex="-1"
-      id="offcanvasSearch"
-      aria-labelledby="Search"
-    >
-      <div class="offcanvas-header justify-content-center">
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="order-md-last">
-          <h4 class="text-primary text-uppercase mb-3">Search</h4>
-          <div class="search-bar border rounded-2 border-dark-subtle">
-            <form
-              id="search-form"
-              class="text-center d-flex align-items-center"
-              action=""
-              method=""
-            >
-              <input
-                type="text"
-                class="form-control border-0 bg-transparent"
-                placeholder="Search Here"
-              />
-              <iconify-icon
-                icon="tabler:search"
-                class="fs-4 me-3"
-              ></iconify-icon>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- this is for the my cart button and menu at the top right corner -->
 
     <!-- this is the main header section for the web palte -->
-
-    <header>
-      <div class="container py-2">
-        <div class="row py-4 pb-0 pb-sm-4 align-items-center">
-          <div class="col-sm-4 col-lg-3 text-center text-sm-start">
-            <div class="main-logo">
-              <a href="index.html">
-                <img src="images/logo.png" alt="logo" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block"
-          >
-            <div class="search-bar border rounded-2 px-3 border-dark-subtle">
-              <form
-                id="search-form"
-                class="text-center d-flex align-items-center"
-                action=""
-                method=""
-              >
-                <input
-                  type="text"
-                  class="form-control border-0 bg-transparent"
-                  placeholder="Search for more than 10,000 products"
-                />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"
-                  />
-                </svg>
-              </form>
-            </div>
-          </div>
-
-          <div
-            class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end"
-          >
-            <div class="support-box text-end d-none d-xl-block">
-              <span class="fs-6 secondary-font text-muted">Phone</span>
-              <h5 class="mb-0">###########</h5>
-            </div>
-            <div class="support-box text-end d-none d-xl-block">
-              <span class="fs-6 secondary-font text-muted">Email</span>
-              <h5 class="mb-0">######@gmail.com</h5>
-            </div>
-          </div>
+<header style="background: rgb(20, 21, 23); color: white;">
+  <div class="container py-2">
+    <div class="row py-4 pb-0 pb-sm-4 align-items-center">
+      <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" class="img-fluid" />
+          </a>
         </div>
       </div>
 
-      <div class="container-fluid">
-        <hr class="m-0" />
+      <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+        <div class="search-bar border rounded-2 px-3 border-dark-subtle" style="color: white;">
+          <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
+            <input
+              type="text"
+              class="form-control border-0 bg-transparent"
+              placeholder="Search for more than 10,000 products"
+              style="color: white;"
+            />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="color: white;">
+              <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/>
+            </svg>
+          </form>
+        </div>
       </div>
 
-      <div class="container">
-        <nav class="main-menu d-flex navbar navbar-expand-lg">
-          <div class="d-flex d-lg-none align-items-end mt-3">
+      <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+        <div class="support-box text-end d-none d-xl-block">
+         <span class="fs-6 secondary-font text-muted" style="color: #00FFFF;">Phone</span>
+
+          <h5 class="mb-0" style="color: white;">###########</h5>
+        </div>
+        <div class="support-box text-end d-none d-xl-block">
+          <span class="fs-6 secondary-font text-muted" style="color: #fff;">Email</span>
+          <h5 class="mb-0" style="color: white;">######@gmail.com</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <hr class="m-0" />
+  </div>
+
+  <div class="container">
+    <nav class="main-menu d-flex navbar navbar-expand-lg">
+      <div class="d-flex d-lg-none align-items-end mt-3">
+        <ul class="d-flex justify-content-end list-unstyled m-0">
+          <li>
+            <a href="account.html" class="mx-3" style="color: white;">
+              <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+            </a>
+          </li>
+          <li>
+            <a href="wishlist.html" class="mx-3" style="color: white;">
+              <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="mx-3">
+            <a href="#" class="mx-3" style="color: white;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+              <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
+              <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">03</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="mx-3" style="color: white;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+              <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="color: white;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header justify-content-center">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body justify-content-between" style="color: white;">
+          <select class="filter-categories border-0 mb-0 me-5" style="position: absolute; right:120px; top:30px; color: white; background: rgb(20, 21, 23);">
+            <option>Category</option>
+            <option>Popular</option>
+            <option>Latest</option>
+            <option>Ratings</option>
+          </select>
+
+          <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active" style="color: white;">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Pages</a>
+              <ul class="dropdown-menu" aria-labelledby="pages" style="background: rgb(20, 21, 23); color: white;">
+                <li><a href="about.html" class="dropdown-item" style="color: white;">About Us<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="shop.html" class="dropdown-item" style="color: white;">Shop<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="single-product.html" class="dropdown-item" style="color: white;">Single Product<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="cart.html" class="dropdown-item" style="color: white;">Cart<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="wishlist.html" class="dropdown-item" style="color: white;">Wishlist<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="checkout.html" class="dropdown-item" style="color: white;">Checkout<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="blog.html" class="dropdown-item" style="color: white;">Blog<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="single-post.html" class="dropdown-item" style="color: white;">Single Post<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="contact.html" class="dropdown-item" style="color: white;">Contact<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="faqs.html" class="dropdown-item" style="color: white;">FAQs<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="account.html" class="dropdown-item" style="color: white;">Account<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="thank-you.html" class="dropdown-item" style="color: white;">Thankyou<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="error.html" class="dropdown-item" style="color: white;">Error 404<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+                <li><a href="styles.html" class="dropdown-item" style="color: white;">Styles<span class="badge bg-success text-dark ms-2">PRO</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link" style="color: white;">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link" style="color: white;">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" style="color: white;">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" style="color: white;">Others</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://templatesjungle.gumroad.com/l/waggy-pet-shop-ecommerce-html-website-template" class="nav-link fw-bold text-dark" target="_blank">GET PRO</a>
+            </li>
+          </ul>
+
+          <div class="d-none d-lg-flex align-items-end">
             <ul class="d-flex justify-content-end list-unstyled m-0">
               <li>
-                <a href="account.html" class="mx-3">
-                  <iconify-icon
-                    icon="healthicons:person"
-                    class="fs-4"
-                  ></iconify-icon>
+                <a href="account.html" class="mx-3" style="color: white;">
+                  <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
                 </a>
               </li>
               <li>
-                <a href="wishlist.html" class="mx-3">
+                <a href="wishlist.html" class="mx-3" style="color: white;">
                   <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
                 </a>
               </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="mx-3"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasCart"
-                  aria-controls="offcanvasCart"
-                >
-                  <iconify-icon
-                    icon="mdi:cart"
-                    class="fs-4 position-relative"
-                  ></iconify-icon>
-                  <span
-                    class="position-absolute translate-middle badge rounded-circle bg-primary pt-2"
-                  >
-                    03
-                  </span>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="mx-3"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasSearch"
-                  aria-controls="offcanvasSearch"
-                >
-                  <iconify-icon
-                    icon="tabler:search"
-                    class="fs-4"
-                  ></iconify-icon>
+              <li class="">
+                <a href="#" class="mx-3" style="color: white;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                  <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
+                  <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">03</span>
                 </a>
               </li>
             </ul>
           </div>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header justify-content-center">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-
-            <div class="offcanvas-body justify-content-between">
-              <select
-                class="filter-categories border-0 mb-0 me-5"
-                style="position: absolute; right:120px; top:30px;"
-              >
-                <option>Category</option>
-                <option>Popular</option>
-                <option>Latest</option>
-                <option>Ratings</option>
-                <option>Ratings</option>
-              </select>
-
-              <ul
-                class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0"
-              >
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    role="button"
-                    id="pages"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >Pages</a
-                  >
-                  <ul class="dropdown-menu" aria-labelledby="pages">
-                    <li>
-                      <a href="about.html" class="dropdown-item"
-                        >About Us<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="shop.html" class="dropdown-item"
-                        >Shop<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="single-product.html" class="dropdown-item"
-                        >Single Product<span
-                          class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="cart.html" class="dropdown-item"
-                        >Cart<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="wishlist.html" class="dropdown-item"
-                        >Wishlist<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="checkout.html" class="dropdown-item"
-                        >Checkout<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="blog.html" class="dropdown-item"
-                        >Blog<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="single-post.html" class="dropdown-item"
-                        >Single Post<span
-                          class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="contact.html" class="dropdown-item"
-                        >Contact<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="faqs.html" class="dropdown-item"
-                        >FAQs<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="account.html" class="dropdown-item"
-                        >Account<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="thank-you.html" class="dropdown-item"
-                        >Thankyou<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="error.html" class="dropdown-item"
-                        >Error 404<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="styles.html" class="dropdown-item"
-                        >Styles<span class="badge bg-success text-dark ms-2"
-                          >PRO</span
-                        ></a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="shop.html" class="nav-link">Shop</a>
-                </li>
-                <li class="nav-item">
-                  <a href="blog.html" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Others</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="https://templatesjungle.gumroad.com/l/waggy-pet-shop-ecommerce-html-website-template"
-                    class="nav-link fw-bold text-dark"
-                    target="_blank"
-                    >GET PRO</a
-                  >
-                </li>
-              </ul>
-
-              <div class="d-none d-lg-flex align-items-end">
-                <ul class="d-flex justify-content-end list-unstyled m-0">
-                  <li>
-                    <a href="account.html" class="mx-3">
-                      <iconify-icon
-                        icon="healthicons:person"
-                        class="fs-4"
-                      ></iconify-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="wishlist.html" class="mx-3">
-                      <iconify-icon
-                        icon="mdi:heart"
-                        class="fs-4"
-                      ></iconify-icon>
-                    </a>
-                  </li>
-
-                  <li class="">
-                    <a
-                      href="#"
-                      class="mx-3"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvasCart"
-                      aria-controls="offcanvasCart"
-                    >
-                      <iconify-icon
-                        icon="mdi:cart"
-                        class="fs-4 position-relative"
-                      ></iconify-icon>
-                      <span
-                        class="position-absolute translate-middle badge rounded-circle bg-primary pt-2"
-                      >
-                        03
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
+        </div>
       </div>
-    </header>
+    </nav>
+  </div>
+</header>
 
     <!-- THIS IS THE CAROUSEL SETION -->
-    <section id="banner" style="background: #343f49; background: radial-gradient(circle, #445360, #fff)">
+    <section id="banner" style="background: #343f49; background: linear-gradient( rgb(20, 21, 23), #007BA7)">
       <!-- this color is for the background of the carousel -->
       <div class="container">
         <div class="swiper main-swiper">
@@ -682,7 +463,7 @@
                   </div>
                   <h2 class="banner-title display-1 fw-normal">
                     Best destination for
-                    <span class="text-primary">your pets</span>
+                    <span class="text-primary">your website</span>
                   </h2>
                   <a
                     href="#"
@@ -739,50 +520,48 @@
 
     <!-- THIS IS FOR THE CUTE ICONS JUST BELOW THE CAROUSEL -->
 
-    <section id="categories">
-      <div class="container my-3 py-5">
-        <div class="row my-5">
-          <div class="col text-center">
-            <a href="#" class="categories-item">
-              <iconify-icon
-                class="category-icon"
-                icon="ph:bowl-food"
-              ></iconify-icon>
-              <h5>shop</h5>
-            </a>
-          </div>
-          <div class="col text-center">
-            <a href="#" class="categories-item">
-              <iconify-icon class="category-icon" icon="ph:bird"></iconify-icon>
-              <h5>shop</h5>
-            </a>
-          </div>
-          <div class="col text-center">
-            <a href="#" class="categories-item">
-              <iconify-icon class="category-icon" icon="ph:dog"></iconify-icon>
-              <h5>shop</h5>
-            </a>
-          </div>
-          <div class="col text-center">
-            <a href="#" class="categories-item">
-              <iconify-icon class="category-icon" icon="ph:fish"></iconify-icon>
-              <h5>Shop</h5>
-            </a>
-          </div>
-          <div class="col text-center">
-            <a href="#" class="categories-item">
-              <iconify-icon class="category-icon" icon="ph:cat"></iconify-icon>
-              <h5>Shop</h5>
-            </a>
-          </div>
-        </div>
+    <section id="categories" style="background:#007BA7;background: linear-gradient( #007BA7,rgb(20, 21, 23)); color: white;">
+  <div class="container my-3 py-5">
+    <div class="row my-5">
+      <div class="col text-center">
+        <a href="#" class="categories-item">
+          <iconify-icon class="category-icon" icon="ph:bowl-food"></iconify-icon>
+          <h5>shop</h5>
+        </a>
       </div>
-    </section>
+      <div class="col text-center">
+        <a href="#" class="categories-item">
+          <iconify-icon class="category-icon" icon="ph:bird"></iconify-icon>
+          <h5>shop</h5>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a href="#" class="categories-item">
+          <iconify-icon class="category-icon" icon="ph:dog"></iconify-icon>
+          <h5>shop</h5>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a href="#" class="categories-item">
+          <iconify-icon class="category-icon" icon="ph:fish"></iconify-icon>
+          <h5>Shop</h5>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a href="#" class="categories-item">
+          <iconify-icon class="category-icon" icon="ph:cat"></iconify-icon>
+          <h5>Shop</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- THIS IS FOR THE CUTE ICONS JUST BELOW THE CAROUSEL -->
 
     <!-- THIS IS FOR THE FIRST LIST OF ITEMS  -->
 
-    <section id="clothing" class="my-5 overflow-hidden">
+    <section id="clothing" class="my-5 overflow-hidden" style="background:#007BA7;background: linear-gradient( rgb(20, 21, 23), #007BA7); color: white;">
       <div class="container pb-5">
         <div
           class="section-header d-md-flex justify-content-between align-items-center mb-3"
@@ -1163,7 +942,7 @@
 
     <!-- THIS IS FOR THE SECOND LIST OF ITEMS -->
 
-    <section id="foodies" class="my-5">
+    <section id="foodies" class="my-5"  style="background: #343f49; background:rgb(20, 21, 23)">
       <div class="container my-5 py-5">
         <div
           class="section-header d-md-flex justify-content-between align-items-center"
@@ -1680,8 +1459,9 @@
     <section
       id="banner-2"
       class="my-3"
-      style="background: radial-gradient(#00ffff, #d3d3d3)"
-    >
+      style="background: linear-gradient(#007BA7, rgb(20,21,23))"
+    >style="background: #343f49; background: linear-gradient( rgb(20, 21, 23), #007BA7)"
+    
       <div class="container">
         <div class="row flex-row-reverse banner-content align-items-center">
           <div class="img-wrapper col-12 col-md-6">
@@ -1708,7 +1488,7 @@
 
     <!-- THIS IS FOR THE QUOTES  -->
 
-    <section id="testimonial">
+    <section id="testimonial" style="background: #343f49; background: linear-gradient( rgb(20, 21, 23), #007BA7); color:#fff;">
       <div class="container my-5 py-5">
         <div class="row">
           <div class="offset-md-1 col-md-10">
@@ -1780,7 +1560,7 @@
 
     <!-- THIS IS FOR THE BEST SELLING PRODUCT -->
 
-    <section id="bestselling" class="my-5 overflow-hidden">
+    <section id="bestselling" class="my-5 overflow-hidden" style="background: rgb(20,21,23); background: #007BA7; color:#fff;">
       <div class="container py-5 mb-5">
         <div
           class="section-header d-md-flex justify-content-between align-items-center mb-3"
@@ -2164,8 +1944,8 @@
     <!-- THIS IS FOR THE EMAIL STUFF -->
     <section
       id="register"
-      style="background: radial-gradient(circle, #4caf50, #2196f3)"
-    >
+      style="background: radial-gradient(circle, #007BA7, rgb(20,21,23))"
+    >style="background: #343f49; background: linear-gradient( rgb(20, 21, 23), #007BA7)"
       <div class="container">
         <div class="row my-5 py-5">
           <div class="offset-md-3 col-md-6 my-5">
@@ -2214,119 +1994,100 @@
     <!-- THIS IS FOR THE EMAIL STUFF -->
 
     <!-- THIS IS FOR THE BLOG SECTION -->
-    <section id="latest-blog" class="my-5">
-      <div class="container py-5 my-5">
-        <div class="row mt-5">
-          <div
-            class="section-header d-md-flex justify-content-between align-items-center mb-3"
-          >
-            <h2 class="display-3 fw-normal">Latest Blog Post</h2>
-            <div>
-              <a
-                href="#"
-                class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1"
-              >
-                Read all
-                <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
-                  <use xlink:href="#arrow-right"></use></svg
-              ></a>
-            </div>
-          </div>
+   <section id="latest-blog" class="my-5" style="background:rgb(20,21,23); color:#fff;">
+  <div class="container py-5 my-5">
+    <div class="row mt-5">
+      <div class="section-header d-md-flex justify-content-between align-items-center mb-3">
+        <h2 class="display-3 fw-normal" style="color:#fff;">Latest Blog Post</h2>
+        <div>
+          <a href="#" class="btn btn-outline-light btn-lg text-uppercase fs-6 rounded-1" style="border-color: #fff; color: #fff;">
+            Read all
+            <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </a>
         </div>
-        <div class="row">
-          <div class="col-md-4 my-4 my-md-0">
-            <div class="z-1 position-absolute rounded-3 m-2 px-3 pt-1 bg-light">
-              <h3 class="secondary-font text-primary m-0">20</h3>
-              <p class="secondary-font fs-6 m-0">Feb</p>
-            </div>
-            <div class="card position-relative">
-              <a href="single-post.html"
-                ><img
-                  src="images/3.jpeg"
-                  class="img-fluid rounded-4"
-                  alt="image"
-              /></a>
-              <div class="card-body p-0">
-                <a href="single-post.html">
-                  <h3 class="card-title pt-4 pb-3 m-0">
-                    10 Reasons to be helpful towards any animals
-                  </h3>
-                </a>
-
-                <div class="card-text">
-                  <p class="blog-paragraph fs-6">
-                    At the core of our practice is the idea that cities are the
-                    incubators of our greatest achievements, and the best hope
-                    for a sustainable future.
-                  </p>
-                  <a href="single-post.html" class="blog-read">read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-4 my-md-0">
-            <div class="z-1 position-absolute rounded-3 m-2 px-3 pt-1 bg-light">
-              <h3 class="secondary-font text-primary m-0">21</h3>
-              <p class="secondary-font fs-6 m-0">Feb</p>
-            </div>
-            <div class="card position-relative">
-              <a href="single-post.html"
-                ><img
-                  src="images/3.jpeg"
-                  class="img-fluid rounded-4"
-                  alt="image"
-              /></a>
-              <div class="card-body p-0">
-                <a href="single-post.html">
-                  <h3 class="card-title pt-4 pb-3 m-0">
-                    How to know your pet is hungry
-                  </h3>
-                </a>
-
-                <div class="card-text">
-                  <p class="blog-paragraph fs-6">
-                    At the core of our practice is the idea that cities are the
-                    incubators of our greatest achievements, and the best hope
-                    for a sustainable future.
-                  </p>
-                  <a href="single-post.html" class="blog-read">read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-4 my-md-0">
-            <div class="z-1 position-absolute rounded-3 m-2 px-3 pt-1 bg-light">
-              <h3 class="secondary-font text-primary m-0">22</h3>
-              <p class="secondary-font fs-6 m-0">Feb</p>
-            </div>
-            <div class="card position-relative">
-              <a href="single-post.html"
-                ><img
-                  src="images/3.jpeg"
-                  class="img-fluid rounded-4"
-                  alt="image"
-              /></a>
-              <div class="card-body p-0">
-                <a href="single-post.html">
-                  <h3 class="card-title pt-4 pb-3 m-0">
-                    Best home for your pets
-                  </h3>
-                </a>
-
-                <div class="card-text">
-                  <p class="blog-paragraph fs-6">
-                    At the core of our practice is the idea that cities are the
-                    incubators of our greatest achievements, and the best hope
-                    for a sustainable future.
-                  </p>
-                  <a href="single-post.html" class="blog-read">read more</a>
-                </div>
-              </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 my-4 my-md-0">
+        <div class="z-1 position-absolute rounded-3 m-2 px-3 pt-1 bg-light">
+          <h3 class="secondary-font text-primary m-0">20</h3>
+          <p class="secondary-font fs-6 m-0">Feb</p>
+        </div>
+        <div class="card position-relative">
+          <a href="single-post.html">
+            <img src="images/3.jpeg" class="img-fluid rounded-4" alt="image" />
+          </a>
+          <div class="card-body p-0">
+            <a href="single-post.html">
+              <h3 class="card-title pt-4 pb-3 m-0" style="color:#fff;">10 Reasons to be helpful towards any animals</h3>
+            </a>
+            <div class="card-text">
+              <p class="blog-paragraph fs-6" style="color:#fff;">At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.</p>
+              <a href="single-post.html" class="blog-read" style="color:#fff;">read more</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-md-4 my
+-4 my-md-0">
+        <div class="z-1 position-absolute rounded-3 m-2 px-3 pt-1 bg-light">
+          <h3 class="secondary-font text-primary m-0">21</h3>
+          <p class="secondary-font fs-6 m-0">Feb</p>
+        </div>
+        <div class="card position-relative">
+          <a href="single-post.html">
+            <img src="images/3.jpeg" class="img-fluid rounded-4" alt="image" />
+          </a>
+          <div class="card-body p-0">
+            <a href="single-post.html">
+              <h3 class="card-title pt-4 pb-3 m-0" style="color:#fff;">How to know your pet is hungry</h3>
+            </a>
+            <div class="card-text">
+              <p class="blog-paragraph fs-6" style="color:#fff;">At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.</p>
+              <a href="single-post.html" class="blog-read" style="color:#fff;">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-4 my-md-0">
+        <div class="z-1 position-absolute rounded-3 m-2 px-3 pt-1 bg-light">
+          <h3 class="secondary-font text-primary m-0">22</h3>
+          <p class="secondary-font fs-6 m-0">Feb</p>
+        </div>
+        <div class="card position-relative">
+          <a href="single-post.html">
+            <img src="images/3.jpeg" class="img-fluid rounded-4" alt="image" />
+          </a>
+          <div class="card-body p-0">
+            <a href="single-post.html">
+              <h3 class="card-title pt-4 pb-3 m-0" style="color:#fff;">Best home for your pets</h3>
+            </a>
+            <div class="card-text">
+              <p class="blog-paragraph fs-6" style="color:#fff;">At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.</p>
+              <a href="single-post.html" class="blog-read" style="color:#fff;">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.btn-outline-light').forEach(function(button) {
+    button.addEventListener('mouseover', function() {
+      button.style.backgroundColor = '#fff';
+      button.style.color = 'rgb(20, 21, 23)';
+    });
+    button.addEventListener('mouseout', function() {
+      button.style.backgroundColor = 'transparent';
+      button.style.color = '#fff';
+    });
+  });
+</script>
+
     <!-- THIS IS FOR THE BLOG SECTION -->
 
     <!-- THIS IS FOR THE SERVICE ICON -->
