@@ -34,7 +34,7 @@
     />
   </head>
 
-<body>
+<body style=" background: linear-gradient( #007BA7, rgb(20, 21, 23))">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <defs>
         <symbol
@@ -259,7 +259,7 @@
     <!-- this is for the my cart button and menu at the top right corner -->
 
     <!-- this is the main header section for the web palte -->
-<header style="background: rgb(20, 21, 23); color: white;">
+<header style=" background: linear-gradient( #007BA7, rgb(20, 21, 23));">
   <div class="container py-2">
     <div class="row py-4 pb-0 pb-sm-4 align-items-center">
       <div class="col-sm-4 col-lg-3 text-center text-sm-start">
@@ -288,7 +288,7 @@
 
       <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
         <div class="support-box text-end d-none d-xl-block">
-         <span class="fs-6 secondary-font text-muted" style="color: #00FFFF;">Phone</span>
+         <span class="fs-6 secondary-font text-muted" >Phone</span>
 
           <h5 class="mb-0" style="color: white;">###########</h5>
         </div>
@@ -387,7 +387,7 @@
               <a href="#" class="nav-link" style="color: white;">Others</a>
             </li>
             <li class="nav-item">
-              <a href="https://templatesjungle.gumroad.com/l/waggy-pet-shop-ecommerce-html-website-template" class="nav-link fw-bold text-dark" target="_blank">GET PRO</a>
+              <a href="#" class="nav-link fw-bold text-white" target="_blank" >GET PRO</a>
             </li>
           </ul>
 
@@ -520,36 +520,42 @@
 
     <!-- THIS IS FOR THE CUTE ICONS JUST BELOW THE CAROUSEL -->
 
-    <section id="categories" style="background:#007BA7;background: linear-gradient( #007BA7,rgb(20, 21, 23)); color: white;">
+    <section id="categories" style="background:#007BA7;background: linear-gradient( #007BA7,rgb(20, 21, 23));">
+    <style> 
+      #categories h5{
+        color:#fff;
+      }
+    </style>
   <div class="container my-3 py-5">
     <div class="row my-5">
       <div class="col text-center">
         <a href="#" class="categories-item">
-          <iconify-icon class="category-icon" icon="ph:bowl-food"></iconify-icon>
+          <iconify-icon class="category-icon" icon="ph:shopping-cart"></iconify-icon>
+          
           <h5>shop</h5>
         </a>
       </div>
       <div class="col text-center">
         <a href="#" class="categories-item">
-          <iconify-icon class="category-icon" icon="ph:bird"></iconify-icon>
+          <iconify-icon class="category-icon" icon="ph:gift"></iconify-icon>
           <h5>shop</h5>
         </a>
       </div>
       <div class="col text-center">
         <a href="#" class="categories-item">
-          <iconify-icon class="category-icon" icon="ph:dog"></iconify-icon>
+          <iconify-icon class="category-icon" icon="ph:laptop"></iconify-icon>
           <h5>shop</h5>
         </a>
       </div>
       <div class="col text-center">
         <a href="#" class="categories-item">
-          <iconify-icon class="category-icon" icon="ph:fish"></iconify-icon>
+          <iconify-icon class="category-icon" icon="feather:github"></iconify-icon>
           <h5>Shop</h5>
         </a>
       </div>
       <div class="col text-center">
         <a href="#" class="categories-item">
-          <iconify-icon class="category-icon" icon="ph:cat"></iconify-icon>
+          <iconify-icon class="category-icon" icon="heroicons-outline:chat-alt"></iconify-icon>
           <h5>Shop</h5>
         </a>
       </div>
@@ -561,12 +567,24 @@
 
     <!-- THIS IS FOR THE FIRST LIST OF ITEMS  -->
 
-    <section id="clothing" class="my-5 overflow-hidden" style="background:#007BA7;background: linear-gradient( rgb(20, 21, 23), #007BA7); color: white;">
+    <section id="clothing" class="my-5 overflow-hidden" style="background:#007BA7;background: radial-gradient(circle, rgb(20, 21, 23)40%, #008080,  rgb(20, 21, 23));">
+    
+      <style> 
+        #clothing h5{
+          color:#D3D3D3;
+        }
+      </style>
+
+
       <div class="container pb-5">
         <div
           class="section-header d-md-flex justify-content-between align-items-center mb-3"
         >
-          <h2 class="display-3 fw-normal">shop</h2>
+          <h2 class="display-3 fw-normal" style=  "background-image: linear-gradient(to right, #008080, #FF7F50); /* Define your gradient colors */
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent; /* Hide the actual text color */"
+      >shop</h2>
           <div>
             <a
               href="#"
@@ -942,12 +960,26 @@
 
     <!-- THIS IS FOR THE SECOND LIST OF ITEMS -->
 
-    <section id="foodies" class="my-5"  style="background: #343f49; background:rgb(20, 21, 23)">
+    <section id="foodies" class="my-5"  style="background: radial-gradient(circle, #008080, rgb(20,21,23))">
+    <style>
+      #foodies h5{
+        color:#fff;
+      }
+      #foodies h3{
+        color:#C0C0C0;
+      }
+      #foodies h2{
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Define your gradient colors */
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent; /* Hide the actual text color */
+      }
+    </style>
       <div class="container my-5 py-5">
         <div
           class="section-header d-md-flex justify-content-between align-items-center"
         >
-          <h2 class="display-3 fw-normal">shop</h2>
+          <h2 class="display-3 fw-normal" >shop</h2>
           <div class="mb-4 mb-md-0">
             <p class="m-0">
               <button class="filter-button me-4 active" data-filter="*">
@@ -963,7 +995,12 @@
               href="#"
               class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1"
             >
-              shop now
+              <p style="
+                background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Define your gradient colors */
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent; /* Hide the actual text color */
+              ">shop now</p>
               <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
                 <use xlink:href="#arrow-right"></use></svg
             ></a>
@@ -1331,9 +1368,8 @@
 
           <div class="item dog col-md-4 col-lg-3 my-4">
             <div
-              class="z-1 position-absolute rounded-3 m-3 px-3 border border-dark-subtle"
-            >
-              Sale
+              class="z-1 position-absolute rounded-3 m-3 px-3 border border-dark-subtle">
+              hello
             </div>
             <div class="card position-relative">
               <a href="single-product.html"
@@ -1459,8 +1495,7 @@
     <section
       id="banner-2"
       class="my-3"
-      style="background: linear-gradient(#007BA7, rgb(20,21,23))"
-    >style="background: #343f49; background: linear-gradient( rgb(20, 21, 23), #007BA7)"
+      style="background: linear-gradient(#007BA7, #008080">
     
       <div class="container">
         <div class="row flex-row-reverse banner-content align-items-center">
@@ -1469,9 +1504,9 @@
           </div>
           <div class="content-wrapper col-12 offset-md-1 col-md-5 p-5">
             <div class="secondary-font text-primary text-uppercase mb-3 fs-4">
-              Upto 40% off
+              <p style="color:#FFA500;"> Upto 40% off </p> 
             </div>
-            <h2 class="banner-title display-1 fw-normal">Clearance sale !!!</h2>
+            <h2 class="banner-title display-1 fw-normal" style="color:#98FF98;">Clearance sale !!!</h2>
             <a
               href="#"
               class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1"
@@ -1560,7 +1595,7 @@
 
     <!-- THIS IS FOR THE BEST SELLING PRODUCT -->
 
-    <section id="bestselling" class="my-5 overflow-hidden" style="background: rgb(20,21,23); background: #007BA7; color:#fff;">
+    <section id="bestselling" class="my-5 overflow-hidden" style="background: #343f49; background: linear-gradient(#008080, rgb(20, 21, 23));">
       <div class="container py-5 mb-5">
         <div
           class="section-header d-md-flex justify-content-between align-items-center mb-3"
@@ -1625,7 +1660,7 @@
 
                     <div class="d-flex flex-wrap mt-3">
                       <a href="#" class="btn-cart me-3 px-4 pt-3 pb-3">
-                        <h5 class="text-uppercase m-0">Add to Cart</h5>
+                        <h5 class="text-uppercase m-0" style="color:#98FF98;">Add to Cart</h5>
                       </a>
                       <a href="#" class="btn-wishlist px-4 pt-3">
                         <iconify-icon
@@ -1683,7 +1718,7 @@
 
                     <div class="d-flex flex-wrap mt-3">
                       <a href="#" class="btn-cart me-3 px-4 pt-3 pb-3">
-                        <h5 class="text-uppercase m-0">Add to Cart</h5>
+                        <h5 class="text-uppercase m-0" style="color:#98FF98;">Add to Cart</h5>
                       </a>
                       <a href="#" class="btn-wishlist px-4 pt-3">
                         <iconify-icon
@@ -1743,7 +1778,7 @@
 
                     <div class="d-flex flex-wrap mt-3">
                       <a href="#" class="btn-cart me-3 px-4 pt-3 pb-3">
-                        <h5 class="text-uppercase m-0">Add to Cart</h5>
+                        <h5 class="text-uppercase m-0" style="color:#98FF98;">Add to Cart</h5>
                       </a>
                       <a href="#" class="btn-wishlist px-4 pt-3">
                         <iconify-icon
@@ -1801,7 +1836,7 @@
 
                     <div class="d-flex flex-wrap mt-3">
                       <a href="#" class="btn-cart me-3 px-4 pt-3 pb-3">
-                        <h5 class="text-uppercase m-0">Add to Cart</h5>
+                        <h5 class="text-uppercase m-0" style="color:#98FF98;">Add to Cart</h5>
                       </a>
                       <a href="#" class="btn-wishlist px-4 pt-3">
                         <iconify-icon
@@ -1944,8 +1979,7 @@
     <!-- THIS IS FOR THE EMAIL STUFF -->
     <section
       id="register"
-      style="background: radial-gradient(circle, #007BA7, rgb(20,21,23))"
-    >style="background: #343f49; background: linear-gradient( rgb(20, 21, 23), #007BA7)"
+      style="background: radial-gradient(circle, #007BA7, rgb(20,21,23))">
       <div class="container">
         <div class="row my-5 py-5">
           <div class="offset-md-3 col-md-6 my-5">
@@ -2092,7 +2126,17 @@
 
     <!-- THIS IS FOR THE SERVICE ICON -->
 
-    <section id="service">
+    <section id="service" >
+      <style>
+    /* Define styles for headings and paragraphs */
+    #service h3 {
+      color: #fff;
+      font-weight: bold;
+    }
+    #service p {
+      color: #fff;
+    }
+  </style>
       <div class="container py-5 my-5">
         <div class="row g-md-5 pt-4">
           <div class="col-md-3 my-3">
@@ -2103,9 +2147,9 @@
                   icon="la:shopping-cart"
                 ></iconify-icon>
               </div>
-              <h3 class="card-title py-2 m-0">Free Delivery</h3>
+              <h3 class="card-title py-2 m-0" style="color:#fff; font-weight:bold;">Free Delivery</h3>
               <div class="card-text">
-                <p class="blog-paragraph fs-6">
+                <p class="blog-paragraph fs-6" style="color:#fff;">
                   Lorem ipsum dolor sit amet, consectetur adipi elit.
                 </p>
               </div>
@@ -2163,7 +2207,7 @@
       </div>
     </section>
     <!-- THIS IS FOR THE SERVICE ICON -->
-
+<!--this section is for the images at the bottom of the page.-->
     <section id="insta" class="my-5">
       <div class="row g-0 py-5">
         <div class="col instagram-item text-center position-relative">
@@ -2254,12 +2298,12 @@
     </section>
 
     <!-- FOOTER -->
-    <footer id="footer" class="my-5">
+    <footer id="footer" class="my-5" style="background: #343f49; background: linear-gradient( rgb(20, 21, 23), #007BA7); color:#fff;">
       <div class="container py-5 my-5">
         <div class="row">
           <div class="col-md-3">
             <div class="footer-menu">
-              <img src="images/logo.png" alt="logo" />
+              <img src="images/logo.png" alt="logo" style="position:absolute; left:30px;/>
               <p class="blog-paragraph fs-6 mt-3">
                 Subscribe to our newsletter to get updates about our grand
                 offers.
@@ -2312,7 +2356,7 @@
           </div>
           <div class="col-md-3">
             <div class="footer-menu">
-              <h3>Quick Links</h3>
+              <h3 style="color:#fff; font-weight:bold;">Quick Links</h3>
               <ul class="menu-list list-unstyled">
                 <li class="menu-item">
                   <a href="#" class="nav-link">Home</a>
@@ -2334,7 +2378,7 @@
           </div>
           <div class="col-md-3">
             <div class="footer-menu">
-              <h3>Help Center</h3>
+              <h3 style="color:#fff; font-weight:bold;">Help Center</h3>
               <ul class="menu-list list-unstyled">
                 <li class="menu-item">
                   <a href="#" class="nav-link">FAQs</a>
@@ -2356,7 +2400,7 @@
           </div>
           <div class="col-md-3">
             <div>
-              <h3>Our Newsletter</h3>
+              <h3 style="color:#fff; font-weight:bold;">Our Newsletter</h3>
               <p class="blog-paragraph fs-6">
                 Subscribe to our newsletter to get updates about our grand
                 offers.
@@ -2392,7 +2436,7 @@
         <hr class="m-0" />
         <div class="row mt-3">
           <div class="col-md-6 copyright">
-            <p class="secondary-font">
+            <p class="secondary-font" style="color:#fff;">
               © 2023 afford-themes. All rights reserved.
             </p>
           </div>
